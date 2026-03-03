@@ -60,9 +60,9 @@ export default function ContactUs() {
 
           <div className="mt-12 p-8 bg-zinc-900 rounded-3xl text-white">
             <h3 className="text-xl font-bold mb-4">Developed By</h3>
-            <p className="opacity-70 mb-2">Olarotimi Olaniran</p>
-            <p className="opacity-70 mb-2">olarotimiaolaniran@gmail.com</p>
-            <p className="opacity-70">Lagos, Nigeria</p>
+            <p className="opacity-70 mb-2">CPISM 5 students </p>
+            <p className="opacity-70 mb-2">Aptech Agodi , Ibadan</p>
+            <p className="opacity-70">Ibadan, Nigeria</p>
           </div>
         </div>
 

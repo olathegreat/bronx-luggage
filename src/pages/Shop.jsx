@@ -89,7 +89,7 @@ export default function Shop({
                 ? "ALL PRODUCTS"
                 : filterCategory.toUpperCase()}
             </h2>
-            <p className="text-zinc-400 text-sm font-medium">
+            <p className="text-zinc-400 text-xs sm:text-sm font-medium">
               {filteredProducts.length} items found
             </p>
           </div>

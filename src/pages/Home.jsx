@@ -23,7 +23,7 @@ export default function Home({
 
   return (
     <div className="space-y-20">
-      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden rounded-3xl mx-4 mt-4">
+      <section className="relative h-full sm:h-[80vh] flex items-center justify-center overflow-hidden rounded-3xl mx-4 mt-4 pt-10 pb-10">
         <img
           src="https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg?auto=compress&cs=tinysrgb&w=1920&h=750&dpr=2"
           alt="Hero"
@@ -31,11 +31,11 @@ export default function Home({
           referrerPolicy="no-referrer"
         />
         <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]" />
-        <div className="relative z-10 text-center text-white px-4 max-w-4xl">
+        <div className="relative z-10 text-center text-white px-4  max-w-4xl">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-6xl md:text-8xl font-black mb-6 tracking-tighter"
+            className="text-3xl md:text-8xl font-black mb-6 tracking-tighter"
           >
             TRAVEL IN <br />
             <span className="text-indigo-300">EXCELLENCE.</span>
@@ -64,13 +64,13 @@ export default function Home({
                 setFilterSize("All");
                 setFilterBrand("All");
               }}
-              className="px-8 py-4 bg-white text-zinc-900 rounded-full font-bold hover:bg-indigo-500 hover:text-white transition-all duration-300 flex items-center gap-2"
+              className="px-8 py-4 bg-white text-zinc-900 rounded-full font-bold hover:bg-indigo-500 hover:text-white transition-all duration-300 flex justify-center items-center gap-2 w-full sm:w-auto"
             >
               Explore Collection <ArrowRight className="w-5 h-5" />
             </Link>
             <Link
               to="/about"
-              className="px-8 py-4 bg-white/10 backdrop-blur border border-white/20 text-white rounded-full font-bold hover:bg-white/20 transition-all duration-300"
+              className="px-8 py-4 bg-white/10 backdrop-blur border border-white/20 text-white rounded-full font-bold hover:bg-white/20 transition-all duration-300 w-full sm:w-auto"
             >
               Our Story
             </Link>
@@ -114,7 +114,7 @@ export default function Home({
                 src={cat.img}
                 alt={cat.name}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                referrerPolicy="no-referrer"
+              
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
               <div className="absolute bottom-8 left-8">

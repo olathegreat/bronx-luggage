@@ -5,13 +5,13 @@ export default function Gallery() {
   const images = [
     "https://images.unsplash.com/photo-1565026057447-bc90a3dceb87",
     "https://images.unsplash.com/photo-1548036328-c9fa89d128fa",
-    "https://images.unsplash.com/photo-1553062407-98eeb94c6a62",
+    "https://images.pexels.com/photos/27793087/pexels-photo-27793087.jpeg",
     "https://images.unsplash.com/photo-1584917865442-de89df76afd3",
-    "https://images.unsplash.com/photo-1572509018340-67443106da11",
+    "https://images.pexels.com/photos/7159408/pexels-photo-7159408.jpeg",
     "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3",
-    "https://images.unsplash.com/photo-1553913861-c0fddf2619ee",
-    "https://images.unsplash.com/photo-1473625247510-8ceb1760943f",
-    "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
+    "https://images.pexels.com/photos/4452513/pexels-photo-4452513.jpeg",
+    "https://images.pexels.com/photos/842959/pexels-photo-842959.jpeg",
+    "https://images.pexels.com/photos/2646521/pexels-photo-2646521.jpeg",
   ];
 
   return (
