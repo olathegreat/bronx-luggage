@@ -38,7 +38,7 @@ export default function Home({
             className="text-6xl md:text-8xl font-black mb-6 tracking-tighter"
           >
             TRAVEL IN <br />
-            <span className="text-indigo-400">EXCELLENCE.</span>
+            <span className="text-indigo-300">EXCELLENCE.</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 30 }}

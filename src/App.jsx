@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import { motion, AnimatePresence } from "motion/react";
-
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Ticker from "./components/Ticker";
-
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import Brands from "./pages/Brands";

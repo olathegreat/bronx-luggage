@@ -20,7 +20,9 @@ export default function Shop({
   onBrandChange,
   onPriceChange,
 }) {
+  const [searchTerm, setSearchTerm] = React.useState("");
   const filteredProducts = useMemo(() => {
+    const term = (searchTerm || "").trim().toLowerCase();
     return PRODUCTS.filter((p) => {
       const catMatch =
         filterCategory === "All" || p.category === filterCategory;
@@ -36,13 +38,18 @@ export default function Shop({
         (filterPrice === "Under $100" && p.price < 100) ||
         (filterPrice === "$100 - $250" && p.price >= 100 && p.price <= 250) ||
         (filterPrice === "Over $250" && p.price > 250);
+      const searchMatch =
+        term === "" ||
+        p.name.toLowerCase().includes(term) ||
+        (p.brand && p.brand.toLowerCase().includes(term));
       return (
         catMatch &&
         genMatch &&
         colorMatch &&
         sizeMatch &&
         brandMatch &&
-        priceMatch
+        priceMatch &&
+        searchMatch
       );
     });
   }, [
@@ -52,12 +59,15 @@ export default function Shop({
     filterSize,
     filterBrand,
     filterPrice,
+    searchTerm,
   ]);
 
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="flex flex-col md:flex-row gap-8">
         <FilterSidebar
+          searchTerm={searchTerm}
+          onSearchChange={setSearchTerm}
           filterCategory={filterCategory}
           filterGender={filterGender}
           filterColor={filterColor}

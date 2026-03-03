@@ -20,7 +20,7 @@ export default function Footer() {
   return (
     <footer className="bg-white border-t border-zinc-100 pt-20 pb-24">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           <div className="space-y-6">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white">
@@ -88,9 +88,11 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="Email address"
-                className="flex-1 px-4 py-2 bg-zinc-100 border-none rounded-lg focus:ring-2 focus:ring-indigo-500"
+                className="w-[70%] px-4 py-2 bg-zinc-100 border-none rounded-lg 
+                focus:ring-2 focus:ring-indigo-500"
               />
-              <button className="px-4 py-2 bg-indigo-600 text-white rounded-lg font-bold hover:bg-indigo-700 transition-colors">
+              <button className="px-4 py-2 bg-indigo-600 text-white rounded-lg 
+              font-bold hover:bg-indigo-700 transition-colors">
                 Join
               </button>
             </div>

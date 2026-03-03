@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "motion/react";
-import { ShoppingBag, Search, Menu, X, User } from "lucide-react";
+import { ShoppingBag, Menu, X, User } from "lucide-react";
 
 export default function Header({ visitorCount }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -60,10 +60,6 @@ export default function Header({ visitorCount }) {
               </p>
             </div>
           </div>
-
-          <button className="p-2 text-zinc-500 hover:text-indigo-600 transition-colors">
-            <Search className="w-6 h-6" />
-          </button>
 
           <button
             className="lg:hidden p-2 text-zinc-500"
